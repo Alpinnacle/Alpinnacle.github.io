@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/newindex.css">
+
+    <!-- Font Awesome Files -->
+    <link rel="stylesheet" href="./css/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/solid.css">
+
+    <title>Tristan Burns | HTML Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon/favicon-16x16.png">
+    <script src="./js/custom.js"></script>
+  </head>
+
+  <body>
+    <div id="landing-page-container" class="container landing-page-container">
+        
+      <div class="light-blue-spacer"></div>
+      <div class="grey-bg"></div>
+      <div class="light-orange-bg"></div>
+      <div class="light-blue-bg"></div>
+        <div class="welcome-text-container">
+          <div class="welcome-text">Welcome!</div>
+            <button class="welcome-button" onclick="welcomeTransition()">
+              <span>Let's Go!</span>
+            </button>
+        </div>
+      <div class="bg-img"></div>
+      <div id="grey-overlay" class=""></div>
+    </div>
+    
+    <div class="transition-container">
+      <div id="grey-transition-tail" class=""></div>
+      <div id="light-orange-transition-tail" class=""></div>
+      <div id="light-blue-transition" class=""></div>
+      <div id="light-orange-transition-head" class=""></div>
+      <div id="grey-transition-head" class=""></div>
+    </div>
+    
+    <div class="overall-page-container">
+      <div id="hello-container" class="hello-photos-section">
+        <div class="photo-hello photo-1"></div>
+        <div class="photo-hello photo-2"></div>
+        <div class="photo-hello photo-3"></div>
+        <div class="photo-hello photo-4"></div>
+          <div class="hello-under"></div>
+          <div class="hello-box">Hello</div>
+      </div>
+
+      <div class="buffer-1"></div>
+
+      <div id="w-p-sect" class="welcome-portfolio-section" onmouseover="beginAutoTyping()">
+        <div id="w-p-cont-1" class="item-hidden">
+          <p id="p1" class="item-hidden">Welcome to my portfolio.</p></br>
+        </div>
+        <div id="w-p-cont-2" class="item-hidden">  
+          <p id="p2" class="item-hidden" >I am an aspiring programmer, </p></br>
+        </div>
+        <div id="w-p-cont-3" class="item-hidden">
+          <p id="p3" class="item-hidden" >learning HTML <i class="fa-brands fa-html5"></i>, CSS <i class="fa-brands fa-css3-alt"></i>, and Javascript <i class="fa-brands fa-js"></i>.</p>
+        </div>
+      </div>
+
+      <div class="buffer-2"></div>
+
+      <!--STACKING CARDS SECTION-->
+      <div id="bio-photo-container" class="container-fluid bio-photo-container">
+        <div class="card" style="min-width: 100%;">
+          <div class="card-body">
+            <div class="row card-container">
+              <div class="col-sm-6 bio-text">
+              <p>This is me...</p></br>
+              <p>Okay, not really.</p></br>
+              <p>But anyways, I'm really enjoying CCS3. It's very creative.</p></br>
+              <p>So I'll tell you a bit about my style, too.</p></br>
+              <p>I like things that are...</p>
+              </div>
+              <div class="col-sm-6 bio-photo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bio-rustic-container" class="container-fluid bio-rustic-container">
+        <div class="row">
+          <div class="col-sm-6 rustic-container"><p>A bit rustic</p></div>
+          <div class="col-sm-6 classic-container"><p>and classic.</p></div>
+        </div>
+      </div>
+      <div id="bio-dark-container" class="bio-dark-container">
+        <div class="dark-text">Dark and moody</div>
+      </div>
+      <div id="bio-simple-container" class="bio-simple-container">
+        <div class="simple-text">SIMPLE</div>
+      </div>
+      <div id="bio-works-container" class="bio-works-container">
+        <div class="works-text">But most importantly, </br>I like things that work.</div>
+      </div>
+    <!--STACKING CARDS SECTION-->
+
+    <div class="buffer-3"></div>
+
+<!--Contact Overall-->
+<div id="contact" class="container contact-section">
+  <div class="row">
+    <!--Github Contact-->
+    <!--<i class="fa-brands fa-square-github"></i>-->
+    <div class="col github-col">
+      <div class="card" style="width: 32vw; padding: 2rem; margin-left: 2rem; translate: 10%;">
+        <div class="icon-github">
+        <i class="fa-brands fa-square-github fa-10x"></i>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Github</h5>
+          <p class="card-text">If you want to find me on Github, click the link below to go to my repository.</p>
+          <a href="https://github.com/Alpinnacle" class="btn btn-warning">Click here!</a>
+        </div>
+      </div>
+    </div>
+    <!--End github contact-->
+
+    <!--Regular contact-->
+    <div class="col" id="card-col">
+      <div class="card" style="width: 32vw; padding: 2rem; margin-left: 2rem; translate: 10%;">
+        <div class="icon-mail">
+          <i class="fa-sharp fa-solid fa-square-envelope fa-10x"></i>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Contact me!</h5>
+          <form>
+            <div class="form-group">
+              <label for="input-name">Name</label>
+              <input type="email" class="form-control" id="input-name" aria-describedby="emailHelp" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="input-email">Email address</label>
+              <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="input-message">Message</label>
+              <input type="email" class="form-control" id="input-message" aria-describedby="emailHelp" placeholder="Enter a short message" required>
+            </div>
+            <button type="submit" class="btn btn-warning">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--End regular contact-->
+  </div>
+</div>
+<!--End contact overall-->
+
+      <div>
+        <i id="scroll-arrow" class="scroll-arrow fa-solid fa-arrow-down fa-2xl" style="color: antiquewhite"></i>
+      </div>
+
+      <footer id="footer"></footer>
+
+    </div>
+
+  </body>
+</html>
